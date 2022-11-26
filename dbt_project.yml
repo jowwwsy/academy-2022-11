@@ -36,7 +36,10 @@ models:
     staging:
       erp_northwind:
         +materialized: view
-
+    
+    marts:
+      +materialized: table
+        
 
 seeds:
   dbt_northwind:
